@@ -1,6 +1,4 @@
-import {
-  Button,
-} from '@chakra-ui/react';
+import {Button,} from '@chakra-ui/react';
 import React, { useState } from 'react';
 import axios from 'axios';
 import StepLayout from "./stepper";
@@ -43,7 +41,7 @@ const IndexPage = () => {
       formData.append('file', selectedFile);
       
       // Replace 'YOUR_UPLOAD_API_URL' with your actual API endpoint
-      const response = await axios.post('http://10.10.13.20:8000/items/upload', formData, Credential = true);
+      const response = await axios.post('http://115.68.193.117:8000/items/upload', formData, Credential = true);
       
       // Handle response, if needed
       console.log('File uploaded:', response.data);

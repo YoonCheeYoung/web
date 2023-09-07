@@ -34,7 +34,7 @@ export default function Login() {
     formData.append('password', password);
 
     try {
-      const response = await fetch('http://10.10.13.20:8000/users/token', {
+      const response = await fetch('http://115.68.193.117:8000/users/token', {
         method: 'POST',
         credentials: 'include',
         headers: {

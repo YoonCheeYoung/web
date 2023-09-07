@@ -33,7 +33,7 @@ export default function MenuLayout({
               <Link href='/net/data/check'>모델 결과 확인</Link>
             </MenuItem>
             <MenuItem>
-              <Link href='/net/data/visualization'>데이터 시각화</Link>
+              <Link href='/net/dashboard'>데이터 시각화</Link>
             </MenuItem>
           </MenuGroup>
           <MenuDivider />
