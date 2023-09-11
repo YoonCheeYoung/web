@@ -17,6 +17,6 @@
       "chakra/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/ServiceCard.js", "pages/_document.js"],
   "exclude": ["node_modules"]
 }

@@ -1,0 +1,17 @@
+/* Add these styles to your CSS file or use a CSS-in-JS solution */
+.chart-container {
+    display: flex;
+    align-items: flex-start; /* Align children vertically at the top */
+  }
+  
+  .chart-icons {
+    display: flex;
+    flex-direction: column; /* Arrange icons vertically */
+    margin-right: 20px; /* Adjust the margin between icons and chart */
+  }
+  
+  .selected-chart {
+    display: flex;
+    /* Add any styles you need for the selected chart area */
+  }
+  
