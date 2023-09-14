@@ -2,6 +2,7 @@ import { useState } from 'react';
 import BarChart from './components/bar-chart';
 import LineChart from './components/line-chart';
 import PieChart from './components/pie-chart';
+import  StackedBar from './components/stacked-bar';
 import { Button, Icon } from '@chakra-ui/react';
 import MenuLayout from '../components/layout';
 import DynamicSelect from './components/select';
@@ -85,7 +86,8 @@ const Dashboard = () => {
 
   const [selectedChart, setSelectedChart] = useState(null);
   const [selectedOptions, setSelectedOptions] = useState([]);
-
+  const [isSurveyOptionSelected, setIsSurveyOptionSelected] = useState(false);
+  const [isQuestionOptionSelected, setIsQuestionOptionSelected] = useState(false);
   const handleChartClick = (chartType) => {
     setSelectedChart(chartType);
   };
@@ -94,6 +96,13 @@ const Dashboard = () => {
     // Ensure selectedOptions is an array
     const newSelectedOptions = Array.isArray(selected) ? selected : [selected];
     setSelectedOptions(newSelectedOptions);
+    setIsSurveyOptionSelected(newSelectedOptions.length > 0);
+  };
+  const handleQuestionChange = (selected) => {
+    // Ensure selectedOptions is an array
+    const newSelectedOptions = Array.isArray(selected) ? selected : [selected];
+    setSelectedOptions(newSelectedOptions);
+    setIsQuestionOptionSelected(newSelectedOptions.length > 0);
   };
   const renderChart = () => {
     switch (selectedChart) {
@@ -103,6 +112,8 @@ const Dashboard = () => {
         return <LineChart data={lineChartData} width={400} height={400} />;
       case 'pie':
         return <PieChart data={pieData} width={400} height={400} />;
+      case 'stacked':
+        return <StackedBar data = {chartData} width={400} height={400} />;
       default:
         return <div>차트를 선택해 주세요</div>;
     }
@@ -111,6 +122,7 @@ const Dashboard = () => {
     console.log('Bar Chart clicked');
     setSelectedChart('bar');
   };
+
   return (
     <div>
     <MenuLayout />
@@ -127,17 +139,21 @@ const Dashboard = () => {
       {/* You can use the selectedOption in your API request or wherever needed */}
       <p>Selected Option: {selectedOptions}</p>
     </div>
-
+    {isSurveyOptionSelected && (
+      <div>
     <div>
       <h2>질문 선택 </h2>
       <DynamicSelect
         placeholder_text="질문을 선택하세요"
         options={questionOption}
-        onChange={handleSelectChange}
+        onChange={handleQuestionChange}
       />
       {/* You can use the selectedOption in your API request or wherever needed */}
       <p>Selected Option: {selectedOptions}</p>
     </div>
+
+    {isQuestionOptionSelected && (
+      <div>     
     <div className="chart-container">
       <div className="chart-icons">
         <Button onClick={handleBarChartClick}>
@@ -149,10 +165,19 @@ const Dashboard = () => {
         <Button onClick={() => setSelectedChart('pie')}>
           <RiPieChart2Fill />
         </Button>
+        <Button onClick={() => setSelectedChart('stacked')}>
+          <RiPieChart2Fill />
+        </Button>
       </div>
       <div className="selected-chart">{renderChart()}</div>
+      </div>
+
     </div>
+          )}
+    </div>
+    )}
   </div>
+
 );
 };
 export default Dashboard;
