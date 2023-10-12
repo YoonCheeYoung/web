@@ -31,7 +31,7 @@ const IndexPage = () => {
           title={services[0].title}
           description={services[0].description}
           link={services[0].link}
-          height={cardHeight}
+          // height={cardHeight}
         />
         </Tooltip>
 
@@ -40,7 +40,7 @@ const IndexPage = () => {
           title={services[1].title}
           description={services[1].description}
           link={services[1].link}
-          height={cardHeight}
+          // height={cardHeight}
         />
         </Tooltip>
 

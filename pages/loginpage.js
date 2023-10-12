@@ -13,8 +13,8 @@ import {
   Stack,
   Text,
 } from '@chakra-ui/react'
-import { Logo } from './components/Logo'
-import { PasswordField } from './components/PasswordField'
+import { Logo } from '../components/Logo'
+import { PasswordField } from '../components/PasswordField'
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation'
 import axios from "axios"
@@ -24,8 +24,8 @@ export default function Login() {
   const [data, setData] = useState([]);
   const [id, setId] = useState('');
   const [password, setPassword] = useState('');
-
-
+// Empty dependency array to run this effect only once
+  
   const handleLogin = async () => {
     // ... Fetch request and response handling ...
     const formData = new URLSearchParams();

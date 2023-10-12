@@ -1,0 +1,38 @@
+#csvtb{
+    /* margin: 50% 50% 50% 50%; */
+    /* border:10px red solid; */
+}
+
+#rec{
+
+    /* border:10px blue solid; */
+}
+
+#csvview{
+    /* border: 5px blue solid; */
+    width: 1900px;
+    height: 810px;
+    overflow: auto;
+}
+
+#csvview > div{
+
+}
+
+#csvview > div >table{
+    /* word-break: break-all; */
+    width: 1870px !important;
+    table-layout: fixed;
+    border: 1px solid black !important;
+    border-color: black !important;
+}
+
+#csvview > div >table>th,td{
+    border: 1px solid black !important;
+}
+
+#next{
+    float: right;
+    margin-right:50px;
+    background-color:blanchedalmond;
+}

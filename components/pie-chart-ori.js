@@ -15,10 +15,7 @@ const PieChart = ({ data, width, height }) => {
     <div>
       <h2>Pie Chart</h2>
       <div style={{ width: `${width}px`, height: `${height}px` }}>
-        <Pie
-          data={data}
-          options={options}
-        />
+        <Pie data={data}/>
       </div>
     </div>
   );

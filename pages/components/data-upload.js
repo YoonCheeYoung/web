@@ -1,10 +1,10 @@
 import {Button,} from '@chakra-ui/react';
 import React, { useState } from 'react';
 import axios from 'axios';
-import StepLayout from "../../components/stepper";
-import AuthCheck from "../../components/auth-check";
+import StepLayout from "./stepper";
+import AuthCheck from "../net/components/auth-check";
 // import MenuLayout from "../components/layout";
-import MenuLayout from "../../components/drawer";
+import MenuLayout from "./drawer";
 import { useRouter } from 'next/router';
 
 

@@ -12,6 +12,7 @@ import {
 import { ChevronDownIcon } from '@chakra-ui/icons';
 import Link from 'next/link';
 
+
 export default function MenuLayout({
   children, // will be a page or nested layout
 }) {

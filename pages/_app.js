@@ -2,6 +2,9 @@
 'use client'
 import { ChakraProvider } from '@chakra-ui/react'
 
+// dashboard css import
+import '../styles/dashboard.css';
+import "../styles/showcsv.css";
 // 1. Import the extendTheme function
 import { extendTheme } from '@chakra-ui/react'
 import { useEffect } from 'react';

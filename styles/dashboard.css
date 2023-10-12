@@ -1,0 +1,173 @@
+#outter_frame2{
+    padding:30px;
+}
+
+/* 바로가기 , 타이틀 */
+#title_frame{
+    display:flex;
+    flex-direction: row;
+
+}
+
+/*바로가기  */
+#page_move{
+
+}
+
+/* 타이틀 내용 */
+#title{
+    
+    /* 타이틀 중앙정렬용 */
+    /* position:absolute;
+    left: 50%; */
+    display: flex;
+    width: 100%;
+}
+
+/* 메인: 선택지 , 차트내용 등 */
+#main_frame{
+    padding-top:20px;
+}
+
+/* 설문 드롭다운 */
+#option1{
+    /* max-width: 1000px; */
+}
+#option1 *{
+    padding-top:10px;
+}
+
+/* 질문 드롭다운 */
+#option2{
+    padding-top:20px;
+    /* max-width: 1000px; */
+}
+#option2 *{
+    padding-top:10px;
+}
+
+/* selected option */
+.selected_option{
+    color: red;
+}
+
+/* 차트 컨테이너 */
+.chart-container{
+    padding-top:20px;
+}
+
+/* 차트 아이콘  */
+.chart-icons *{
+    margin-right:5px;
+}
+
+#chart_multi{
+    /* border: 5px red solid; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-left:30px;
+}
+
+#chart_multi_pie{
+    width:35%;
+    /* height: 500px; */
+    /* border: 5px blue solid; */
+    
+    height:300px;
+    display:inline-block;
+
+}
+
+#chart_multi_bar{
+    display: inline-block;
+    width:730px;
+    height: 100%;
+    /* border: 5px purple solid; */
+    /* overflow: auto; */
+    /* margin-left:10px; */
+    
+}
+
+#multi_btn{
+    background-color: skyblue;
+}
+
+
+
+#pie_total{
+    /* border: 3px red solid; */
+    position: absolute;
+    top:300px;
+    right:45px;
+}
+
+
+#csv_down_btn{
+    /* border: 1px red solid; */
+    background-color:#EDF2F7;
+    outline: 2px solid transparent;
+    border-radius: 10%;
+    width: 220px;
+    height: 40px;
+    font-weight: var(--chakra-fontWeights-semibold);
+
+}
+
+#inner_bar{
+    
+}
+
+
+/* 멀티차트 파이 */
+#chart_06{
+    position: relative;
+    border-radius: 3%;
+}
+/* 멀티차트 바 */
+#chart_multi_bar_1{
+    margin-bottom: 30px;
+    border-radius: 0.5em;
+
+}
+#chart_multi_bar_2{
+    border-radius: 0.5em;
+
+}
+/* 멀티차트 싸잡아  */
+.selected-chart.multi_style{
+    /* border :1px black solid; */
+    background-color: rgba(237, 242, 247);
+
+}
+
+
+.selected-chart.multi_style > div{
+    /* border :1px black solid; */
+
+
+ 
+}
+.selected-chart.multi_style.multi_style_bar{
+    margin-left:50px;
+}
+
+
+/* 02번페이지 모델동작버튼 */
+#model_btn{
+    margin-right:10px;
+}
+
+
+
+/* 04 chart */
+#chart{
+    border : 1px red solid;
+    /* height: 700px;
+    width: 1000px; */
+    display: flex;
+
+}
+#chart_board{
+    border : 1px blue solid;
+}

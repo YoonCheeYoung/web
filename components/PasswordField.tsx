@@ -29,14 +29,7 @@ import {
       <FormControl>
         <FormLabel htmlFor="password">Password</FormLabel>
         <InputGroup>
-          <InputRightElement>
-            <IconButton
-              variant="text"
-              aria-label={isOpen ? 'Mask password' : 'Reveal password'}
-              icon={isOpen ? <HiEyeOff /> : <HiEye />}
-              onClick={onClickReveal}
-            />
-          </InputRightElement>
+
           <Input
             id="password"
             ref={mergeRef}
@@ -46,6 +39,14 @@ import {
             required
             {...props}
           />
+          <InputRightElement>
+            <IconButton
+              variant="text"
+              aria-label={isOpen ? 'Mask password' : 'Reveal password'}
+              icon={isOpen ? <HiEyeOff /> : <HiEye />}
+              onClick={onClickReveal}
+            />
+          </InputRightElement>
         </InputGroup>
       </FormControl>
     )
