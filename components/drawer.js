@@ -65,9 +65,9 @@ export default function MenuLayout({
             </Link>
             </Stack>
             <Stack spacing='36px'>
-            <Link href='/'>
+            {/* <Link href='/'>
               초거대 AI
-            </Link>
+            </Link> */}
             </Stack>
           </DrawerBody>
         </DrawerContent>

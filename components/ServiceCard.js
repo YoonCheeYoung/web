@@ -4,8 +4,9 @@ import { Box, Heading, Text } from '@chakra-ui/react';
 import Link from 'next/link';
 
 const ServiceCard = ({ title  , description, link }) => {
+
   return (
-    <Link href={link} passHref>
+    <Link href={link}>
       <Box
         p={4}
         borderWidth="1px"
@@ -22,3 +23,4 @@ const ServiceCard = ({ title  , description, link }) => {
 };
 
 export default ServiceCard;
+    // "build": "next build",

@@ -40,7 +40,7 @@ export default function MenuLayout({
           <MenuDivider />
           <MenuGroup title='초거대 AI'>
             <MenuItem>
-              <Link href='/'>초거대 AI</Link>
+              {/* <Link href='/'>초거대 AI</Link> */}
             </MenuItem>
           </MenuGroup>
         </MenuList>
